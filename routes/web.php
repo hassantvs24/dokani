@@ -11,14 +11,12 @@
 |
 */
 
-Route::get('/', 'Dashboard\DashboardController@index')->name('dashboard');
+Route::get('/', 'Dashboard\DashboardController@index');
 
 
-Route::get('sales/new', 'Sales\SalesController@index')->name('sales');
-Route::get('sales/invoice', 'Sales\InvoiceController@index')->name('sales_invoice');
-Route::get('sales/ledger', 'Sales\LedgerController@index')->name('sales_ledger');
-Route::get('sales/due', 'Sales\DueController@index')->name('sales_due');
-
+Route::get('math/', function () {
+    return  view('main');
+});
 
 
 Auth::routes();

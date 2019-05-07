@@ -1,13 +1,14 @@
 @extends('layouts.master')
 
-@section('title')
-    Main
+@section('content')
+    My content
 @endsection
+
 
 @section('page')
     Main
 @endsection
 
-@section('content')
-    Hello World
+@section('title')
+    Main
 @endsection

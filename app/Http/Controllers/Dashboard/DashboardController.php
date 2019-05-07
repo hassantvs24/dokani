@@ -8,6 +8,7 @@ use App\Http\Controllers\Controller;
 class DashboardController extends Controller
 {
     public function index(){
-        return view('deshboard.deshboard');
+        $data = 'Nazmul';
+        return view('deshboard.dashbord')->with(['my' => $data]);
     }
 }
